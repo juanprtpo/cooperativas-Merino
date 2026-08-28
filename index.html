@@ -545,12 +545,71 @@ let _debounceTimers={};
 // ── CONSTANTES ──────────────────────────────────────────
 const ESTADO_LABEL={prejuridico:'Prejurídico',juridico:'Jurídico',castigo:'Castigo',acuerdo:'Acuerdo de pago',terminado:'Terminado'};
 const JUZGADOS={"051074089001": "JUZGADO 001 PROMISCUO MUNICIPAL DE BRICEÑO", "058874089001": "JUZGADO 001 PROMISCUO MUNICIPAL DE YARUMAL", "058874089002": "JUZGADO 002 PROMISCUO MUNICIPAL DE YARUMAL", "050884003001": "JUZGADO 001 CIVIL MUNICIPAL DE BELLO", "050884003002": "JUZGADO 002 CIVIL MUNICIPAL DE BELLO", "050884003003": "JUZGADO 003 CIVIL MUNICIPAL DE BELLO", "050884003004": "JUZGADO 004 CIVIL MUNICIPAL DE BELLO", "050884003005": "JUZGADO 005 CIVIL MUNICIPAL DE BELLO", "050884189001": "JUZGADO 001 DE PEQUEÑAS CAUSAS  Y COMPETENCIA MÚLTIPLE DE BELLO", "050884189002": "JUZGADO 002 DE PEQUEÑAS CAUSAS  Y COMPETENCIA MÚLTIPLE DE BELLO", "050014003001": "JUZGADO 001 CIVIL MUNICIPAL DE MEDELLÍN", "050014003002": "JUZGADO 002 CIVIL MUNICIPAL DE MEDELLÍN", "050014003003": "JUZGADO 003 CIVIL MUNICIPAL DE MEDELLÍN", "050014003004": "JUZGADO 004 CIVIL MUNICIPAL DE MEDELLÍN", "050014003005": "JUZGADO 005 CIVIL MUNICIPAL DE MEDELLÍN", "050014003006": "JUZGADO 006 CIVIL MUNICIPAL DE MEDELLÍN", "050014003007": "JUZGADO 007 CIVIL MUNICIPAL DE MEDELLÍN", "050014003008": "JUZGADO 008 CIVIL MUNICIPAL DE MEDELLÍN", "050014003009": "JUZGADO 009 CIVIL MUNICIPAL DE MEDELLÍN", "050014003010": "JUZGADO 010 CIVIL MUNICIPAL DE MEDELLÍN", "050014003011": "JUZGADO 011 CIVIL MUNICIPAL DE MEDELLÍN", "050014003012": "JUZGADO 012 CIVIL MUNICIPAL DE MEDELLÍN", "050014003013": "JUZGADO 013 CIVIL MUNICIPAL DE MEDELLÍN", "050014003014": "JUZGADO 014 CIVIL MUNICIPAL DE MEDELLÍN", "050014003015": "JUZGADO 015 CIVIL MUNICIPAL DE MEDELLÍN", "050014003016": "JUZGADO 016 CIVIL MUNICIPAL DE MEDELLÍN", "050014003017": "JUZGADO 017 CIVIL MUNICIPAL DE MEDELLÍN", "050014003018": "JUZGADO 018 CIVIL MUNICIPAL DE MEDELLÍN", "050014003019": "JUZGADO 019 CIVIL MUNICIPAL DE MEDELLÍN", "050014003020": "JUZGADO 020 CIVIL MUNICIPAL DE MEDELLÍN", "050014003021": "JUZGADO 021 CIVIL MUNICIPAL DE MEDELLÍN", "050014003022": "JUZGADO 022 CIVIL MUNICIPAL DE MEDELLÍN", "050014003023": "JUZGADO 023 CIVIL MUNICIPAL DE MEDELLÍN", "050014003024": "JUZGADO 024 CIVIL MUNICIPAL DE MEDELLÍN", "050014003025": "JUZGADO 025 CIVIL MUNICIPAL DE MEDELLÍN", "050014003026": "JUZGADO 026 CIVIL MUNICIPAL DE MEDELLÍN", "050014003027": "JUZGADO 027 CIVIL MUNICIPAL DE MEDELLÍN", "050014003028": "JUZGADO 028 CIVIL MUNICIPAL DE MEDELLÍN", "050014003029": "JUZGADO 029 CIVIL MUNICIPAL DE MEDELLÍN", "050014003030": "JUZGADO 030 CIVIL MUNICIPAL DE MEDELLÍN", "050014003031": "JUZGADO 031 CIVIL MUNICIPAL DE MEDELLÍN", "050014003032": "JUZGADO 032 CIVIL MUNICIPAL DE MEDELLÍN", "050014003033": "JUZGADO 033 CIVIL MUNICIPAL DE MEDELLÍN", "050014003034": "JUZGADO 034 CIVIL MUNICIPAL DE MEDELLÍN", "050014003035": "JUZGADO 035 CIVIL MUNICIPAL DE MEDELLÍN", "056314003001": "JUZGADO 001 CIVIL MUNICIPAL DE SABANETA", "056314003002": "JUZGADO 002 CIVIL MUNICIPAL DE SABANETA", "056314003003": "JUZGADO 003 CIVIL MUNICIPAL DE SABANETA", "056643189001": "JUZGADO 001 PROMISCUO DEL CIRCUITO DE SAN PEDRO DE LOS MILAGROS", "056644089001": "JUZGADO 001 PROMISCUO MUNICIPAL DE SAN PEDRO DE LOS MILAGROS", "050014189001": "JUZGADO 001 DE PEQUEÑAS CAUSAS  Y COMPETENCIA MÚLTIPLE DE MEDELLÍN", "050014189002": "JUZGADO 002 DE PEQUEÑAS CAUSAS  Y COMPETENCIA MÚLTIPLE DE MEDELLÍN", "050014189003": "JUZGADO 003 DE PEQUEÑAS CAUSAS  Y COMPETENCIA MÚLTIPLE DE MEDELLÍN", "050014189004": "JUZGADO 004 DE PEQUEÑAS CAUSAS  Y COMPETENCIA MÚLTIPLE DE MEDELLÍN", "050014189005": "JUZGADO 005 DE PEQUEÑAS CAUSAS  Y COMPETENCIA MÚLTIPLE DE MEDELLÍN", "050014189006": "JUZGADO 006 DE PEQUEÑAS CAUSAS  Y COMPETENCIA MÚLTIPLE DE MEDELLÍN", "050014189007": "JUZGADO 007 DE PEQUEÑAS CAUSAS  Y COMPETENCIA MÚLTIPLE DE MEDELLÍN", "050014189008": "JUZGADO 008 DE PEQUEÑAS CAUSAS  Y COMPETENCIA MÚLTIPLE DE MEDELLÍN", "050014189009": "JUZGADO 009 DE PEQUEÑAS CAUSAS  Y COMPETENCIA MÚLTIPLE DE MEDELLÍN", "050014189010": "JUZGADO 010 DE PEQUEÑAS CAUSAS  Y COMPETENCIA MÚLTIPLE DE MEDELLÍN", "050014189011": "JUZGADO 011 DE PEQUEÑAS CAUSAS Y COMPETENCIA MÚLTIPLE DE MEDELLÍN", "050014303001": "JUZGADO 001 CIVIL MUNICIPAL DE EJECUCIÓN DE SENTENCIAS DE MEDELLÍN", "050014303002": "JUZGADO 002 CIVIL MUNICIPAL DE EJECUCIÓN DE SENTENCIAS DE MEDELLÍN", "050014303003": "JUZGADO 003 CIVIL MUNICIPAL DE EJECUCIÓN DE SENTENCIAS DE MEDELLÍN", "050014303004": "JUZGADO 004 CIVIL MUNICIPAL DE EJECUCIÓN DE SENTENCIAS DE MEDELLÍN", "050014303005": "JUZGADO 005 CIVIL MUNICIPAL DE EJECUCIÓN DE SENTENCIAS DE MEDELLÍN", "050014303006": "JUZGADO 006 CIVIL MUNICIPAL DE EJECUCIÓN DE SENTENCIAS DE MEDELLÍN", "050014303007": "JUZGADO 007 CIVIL MUNICIPAL DE EJECUCIÓN DE SENTENCIAS DE MEDELLÍN", "050014303008": "JUZGADO 008 CIVIL MUNICIPAL DE EJECUCIÓN DE SENTENCIAS DE MEDELLÍN", "050014303009": "JUZGADO 009 CIVIL MUNICIPAL DE EJECUCIÓN DE SENTENCIAS DE MEDELLÍN", "050014303010": "JUZGADO 010 CIVIL MUNICIPAL DE EJECUCIÓN DE SENTENCIAS DE MEDELLÍN"};
-const ETAPAS=['Elaboración de demanda','Presentación de demanda','Reparto y admisión','Notificación al demandado','Notificación al codeudor','Traslado de excepciones','Decreto de medidas cautelares','Embargo y secuestro de bienes','Audiencia inicial','Audiencia de instrucción y juzgamiento','Sentencia','Liquidación del crédito','Mandamiento de pago','Liquidación del crédito aprobada','Remate de bienes','Terminación por pago','Terminación por acuerdo','Archivo del proceso','Proceso suspendido'];
+const ETAPAS=['Elaboración de demanda','Presentación de demanda','Reparto y admisión','Notificación al demandado','Notificación al codeudor','Traslado de excepciones','Decreto de medidas cautelares','Embargo y secuestro de bienes','Audiencia inicial','Audiencia de instrucción y juzgamiento','Sentencia','Liquidación del crédito','Mandamiento de pago','Liquidación del crédito aprobada','Remate de bienes','Terminación por pago','Terminación por acuerdo','Archivo del proceso','Proceso suspendido','Liquidación de Costas','Terminación por Desistimiento tácito','Insolvencia','Reasignación'];
 const TIPO_LABEL={llamada:'Llamada',visita:'Visita',whatsapp:'WhatsApp',correo:'Correo',memorial:'Memorial',demanda:'Demanda',audiencia:'Audiencia',notificacion:'Notificación',acuerdo:'Acuerdo de pago',terminacion:'Terminación',documento:'Documento',otro:'Otro'};
 const TIPO_ICON={llamada:'📞',visita:'🏢',whatsapp:'💬',correo:'✉️',memorial:'📄',demanda:'⚖️',audiencia:'🏛️',notificacion:'📬',acuerdo:'🤝',terminacion:'✅',documento:'📁',otro:'📌'};
 const RES_LABEL={'exitoso':'✓ Exitoso','sin-respuesta':'Sin respuesta','negativo':'✗ Negativo','promesa-pago':'💬 Promesa de pago','numero-errado':'⚠ Dato errado'};
 const MOTIVO_LABEL={'pago-total':'Pago total','acuerdo-pago':'Acuerdo de pago','transaccion':'Transacción','desistimiento':'Desistimiento','prescripcion':'Prescripción','insolvencia-economica':'Insolvencia económica','sentencia-absolutoria':'Sentencia absolutoria','otro':'Otro'};
 const MOTIVO_CASTIGO={'ilocalizado':'Ilocalizado','insolvencia-economica':'Insolvencia económica','sin-bienes':'Sin bienes embargables','fallecido':'Deudor fallecido','deuda-incobrable':'Deuda incobrable','costo-beneficio':'Costo-beneficio desfavorable','prescripcion':'Prescripción','proceso-liquidatorio':'Proceso liquidatorio o de insolvencia','otro':'Otro'};
+// ══════════════════════════════════════════════════════
+//  CAMPOS ADICIONALES (base Cootrasena / Coopantex)
+//  t: select | text | date | money | textarea
+//  Para agregar un campo nuevo basta con anadirlo aqui:
+//  se renderiza, se guarda y se sincroniza solo.
+// ══════════════════════════════════════════════════════
+const CAMPOS_EXTRA=[
+  {k:'lineaCredito',l:'Línea de crédito',t:'select',o:['Consumo','Comercial','Vivienda','Microcrédito']},
+  {k:'garantia',l:'Garantía',t:'select',o:['Personal','Personal Con Codeudor','FGA','Hipotecaría','Vehículo','Prendaria','Otra']},
+  {k:'categoria',l:'Categoría',t:'select',o:['Categoría A','Categoría B','Categoría C','Categoría D','Categoría E']},
+  {k:'agencia',l:'Agencia',t:'select',o:['Principal','Apartado','Quibdo','San Pedro','San Vicente','Istmina']},
+  {k:'zona',l:'Zona',t:'select',o:['Antioquía','Medellín','Choco']},
+  {k:'auxiliarCartera',l:'Auxiliar de cartera',t:'select',o:['Moreno Holguin Juan Sebastian','Rios Osorio Katerin Tatiana']},
+  {k:'diasMoraRango',l:'Rango días de mora',t:'select',o:['De 0 a 30','De 31 a 60','De 61 a 90','De 91 a 120','De 121 a 180','Superior a 181']},
+  {k:'estadoDemanda',l:'Estado de la demanda',t:'select',o:['Prejuridico','Demanda','Reasignación','Insolvencia','Terminación por Desistimiento tácito']},
+  {k:'zonaJuzgado',l:'Zona del juzgado',t:'select',o:['Medellín','Antioquía','Chocó']},
+  {k:'juzgadoOrigen',l:'Juzgado de origen',t:'text',o:null},
+  {k:'fechaPresentacionDemanda',l:'Fecha presentación demanda',t:'date',o:null},
+  {k:'fechaMandamientoPago',l:'Fecha mandamiento de pago',t:'date',o:null},
+  {k:'fechaSentencia',l:'Fecha de sentencia',t:'date',o:null},
+  {k:'capitalSentencia',l:'Capital sentencia',t:'money',o:null},
+  {k:'fechaInteresesMoratorios',l:'Fecha intereses moratorios',t:'date',o:null},
+  {k:'sentidoFallo',l:'Sentido del fallo',t:'select',o:['Favorable','Desfavorable']},
+  {k:'agenciasEnDerecho',l:'Agencias en derecho',t:'money',o:null},
+  {k:'gastosProcesales',l:'Gastos procesales',t:'money',o:null},
+  {k:'liqFechaPresentacion',l:'Liquidación: fecha presentación',t:'date',o:null},
+  {k:'liqFechaAprobacion',l:'Liquidación: fecha aprobación',t:'date',o:null},
+  {k:'liqCapital',l:'Liquidación: capital',t:'money',o:null},
+  {k:'liqIntereses',l:'Liquidación: intereses',t:'money',o:null},
+  {k:'liqAbonos',l:'Liquidación: abonos',t:'money',o:null},
+  {k:'liqTotal',l:'Liquidación: total',t:'money',o:null},
+  {k:'gastosAdicionales',l:'Gastos adicionales',t:'money',o:null},
+  {k:'tipoEmbargo',l:'Tipo de embargo',t:'select',o:['Salario','Inmueble','Establecimiento de comercio','Vehículo','Cuenta bancaria']},
+  {k:'pctEmbargo',l:'% del embargo',t:'text',o:null},
+  {k:'empresaEmbargo',l:'Empresa (pagador)',t:'text',o:null},
+  {k:'retenciones',l:'Retenciones',t:'money',o:null},
+  {k:'aQuienRetienen',l:'A quién se le retiene',t:'text',o:null},
+  {k:'conceptoAbogado',l:'Concepto del abogado',t:'textarea',o:null},
+  {k:'observacionesGrales',l:'Observaciones',t:'textarea',o:null},
+  {k:'ultimaActuacionProcesal',l:'Última actuación procesal',t:'textarea',o:null},
+  {k:'terminacionPagoJuzgado',l:'Terminación por pago en juzgado',t:'text',o:null},
+  {k:'fechaRevision',l:'Fecha de revisión',t:'date',o:null}
+];
+const GRUPOS_EXTRA=[
+  {titulo:'Clasificación del crédito',color:'#0277bd',bg:'#e1f5fe',
+   campos:['lineaCredito','garantia','categoria','agencia','zona','auxiliarCartera','diasMoraRango','estadoDemanda']},
+  {titulo:'Juzgado y demanda',color:'#c62828',bg:'#ffebee',
+   campos:['zonaJuzgado','juzgadoOrigen','fechaPresentacionDemanda','fechaMandamientoPago']},
+  {titulo:'Sentencia',color:'#6a1b9a',bg:'#f3e5f5',
+   campos:['fechaSentencia','capitalSentencia','fechaInteresesMoratorios','sentidoFallo','agenciasEnDerecho','gastosProcesales']},
+  {titulo:'Liquidación del crédito',color:'#00695c',bg:'#e0f2f1',
+   campos:['liqFechaPresentacion','liqFechaAprobacion','liqCapital','liqIntereses','liqAbonos','liqTotal','gastosAdicionales']},
+  {titulo:'Embargo y retenciones',color:'#e65100',bg:'#fff3e0',
+   campos:['tipoEmbargo','pctEmbargo','empresaEmbargo','retenciones','aQuienRetienen']},
+  {titulo:'Seguimiento',color:'#37474f',bg:'#eceff1',
+   campos:['conceptoAbogado','observacionesGrales','ultimaActuacionProcesal','terminacionPagoJuzgado','fechaRevision']}
+];
+const CAMPOS_EXTRA_FECHA=['fechaPresentacionDemanda','fechaMandamientoPago','fechaSentencia','fechaInteresesMoratorios','liqFechaPresentacion','liqFechaAprobacion','fechaRevision'];
+
 const ABOGADOS=['Juan Pablo Restrepo','Luis Fernando Merino','Sonia Restrepo','Verónica Salazar','Valentina'];
 
 // ── HELPERS FINANCIEROS ─────────────────────────────────
@@ -755,7 +814,14 @@ function sanitizarPagare(p){
     vigiladoLitigio:p.vigiladoLitigio===true||p.vigiladoLitigio==='true',
     vigiladoPropio:p.vigiladoPropio===true||p.vigiladoPropio==='true',
     notifCodeudores:(function(){var n=p.notifCodeudores||[];if(typeof n==='string'){try{n=JSON.parse(n);}catch(e){n=[];}}return Array.isArray(n)?n:[];}())
-  });
+  }, (function(){
+    // Campos adicionales: fechas normalizadas a dd/mm/yyyy, el resto como texto
+    var ex={};
+    CAMPOS_EXTRA.forEach(function(f){
+      ex[f.k]=CAMPOS_EXTRA_FECHA.indexOf(f.k)>=0?cleanDate(p[f.k]||''):(p[f.k]||'');
+    });
+    return ex;
+  }()));
 }
 
 // ── API ──────────────────────────────────────────────────
@@ -919,7 +985,7 @@ function subirTodoASheets(){
 }
 function buildPayload(p){
   var t=(p.titular&&typeof p.titular==='object')?p.titular:{};
-  return {
+  var _pl = {
     action:'updatePagare',pagare:p.pagare,entidad:p.entidad||'',
     titular_nombre:t.nombre||'',titular_cc:t.cc||'',titular_lugarExpedicion:t.lugarExpedicion||'',
     titular_direccion:t.direccion||'',titular_ciudad:t.ciudad||'',
@@ -958,6 +1024,12 @@ function buildPayload(p){
     vigiladoPropio:String(p.vigiladoPropio===true),
     notifCodeudores:JSON.stringify(p.notifCodeudores||[])
   };
+  // Adjuntar los campos adicionales al payload
+  CAMPOS_EXTRA.forEach(function(f){
+    var v=p[f.k]||'';
+    _pl[f.k]=CAMPOS_EXTRA_FECHA.indexOf(f.k)>=0?cleanDate(v):String(v);
+  });
+  return _pl;
 }
 function syncPagarePromise(p){
   var url=LS.get('mcmc_api_url')||API;
@@ -1371,7 +1443,10 @@ function renderTabla(){
     var hay=pgStr+' '+(p.titular?p.titular.nombre||'':'').toLowerCase()+' '+
             (p.titular?p.titular.cc||'':'')+' '+(p.abogadoResponsable||'').toLowerCase()+' '+
             (p.radicadoRama||'')+' '+codNombres+' '+
-            (p.titular?p.titular.ciudad||'':'').toLowerCase()+' '+(p.titular?p.titular.telefono||'':'');
+            (p.titular?p.titular.ciudad||'':'').toLowerCase()+' '+(p.titular?p.titular.telefono||'':'')+' '+
+            (p.agencia||'').toLowerCase()+' '+(p.zona||'').toLowerCase()+' '+
+            (p.auxiliarCartera||'').toLowerCase()+' '+(p.observacionesGrales||'').toLowerCase()+' '+
+            (p.conceptoAbogado||'').toLowerCase();
     return hay.includes(q);
   });
   fil.sort(function(a,b){
@@ -1475,6 +1550,42 @@ function rebuildExp(pid){
 }
 
 
+// Dibuja un campo adicional según su tipo
+function campoExtraHtml(p,pg,f){
+  var v=p[f.k]||'';
+  var h='<div style="margin-bottom:7px">';
+  h+='<div style="font-size:10px;color:var(--ink3);text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px">'+f.l+'</div>';
+  var base='class="cx-inp" data-pg="'+pg+'" data-k="'+f.k+'" onclick="event.stopPropagation()" '+
+           'style="width:100%;font-size:12px;padding:5px 7px;border:1px solid var(--bdr);border-radius:4px;background:#fff"';
+  if(f.t==='select'){
+    h+='<select '+base+'><option value="">— Sin definir —</option>';
+    f.o.forEach(function(op){h+='<option value="'+op+'"'+(v===op?' selected':'')+'>'+op+'</option>';});
+    h+='</select>';
+  } else if(f.t==='date'){
+    h+='<input type="date" value="'+toInputDate(v)+'" '+base+'>';
+  } else if(f.t==='money'){
+    h+='<input type="text" value="'+v+'" placeholder="$0" '+base+'>';
+  } else if(f.t==='textarea'){
+    h+='<textarea rows="2" '+base.replace('style="','style="resize:vertical;min-height:44px;')+'>'+v+'</textarea>';
+  } else {
+    h+='<input type="text" value="'+v+'" '+base+'>';
+  }
+  return h+'</div>';
+}
+// Dibuja todos los grupos de campos adicionales
+function panelesExtraHtml(p,pg){
+  var h='';
+  GRUPOS_EXTRA.forEach(function(g){
+    h+='<div class="es" style="border-top:3px solid '+g.color+'">';
+    h+='<h5 style="color:'+g.color+'">'+g.titulo+'</h5>';
+    g.campos.forEach(function(ck){
+      var f=CAMPOS_EXTRA.filter(function(x){return x.k===ck;})[0];
+      if(f)h+=campoExtraHtml(p,pg,f);
+    });
+    h+='</div>';
+  });
+  return h;
+}
 function buildExp(p){
   var pg=p.pagare;
   var etapasOpts=ETAPAS.map(function(e){return '<option value="'+e+'"'+(p.etapaJuridica===e?' selected':'')+'>'+e+'</option>';}).join('');
@@ -1790,6 +1901,7 @@ function buildExp(p){
     h+='<div class="empty-acts">Sin actuaciones aún</div>';
   }
   h+='</div>'; // cierre panel 4
+  h+=panelesExtraHtml(p,pg); // paneles de campos adicionales
   h+='</div>'; // cierre exp-inner
   return h;
 }
@@ -1894,6 +2006,11 @@ function setFechaEstado(pid,val){setField(pid,'fechaEstado',val?cleanDate(val):'
 // ── EVENT DELEGATION ──────────────────────────────────────────
 document.addEventListener('change',function(ev){
   var t=ev.target;var pg=t.dataset.pg;if(!pg)return;
+  if(t.classList.contains('cx-inp')){
+    var k=t.dataset.k;
+    setField(pg,k,CAMPOS_EXTRA_FECHA.indexOf(k)>=0?cleanDate(t.value):t.value);
+    return;
+  }
   if(t.classList.contains('abogado-sel')){setAbogado(pg,t.value);}
   else if(t.classList.contains('etapa-sel')){setEtapa(pg,t.value);}
   else if(t.classList.contains('motivo-sel')){setMotivo(pg,t.value);}
@@ -1916,6 +2033,10 @@ document.addEventListener('change',function(ev){
 });
 document.addEventListener('input',function(ev){
   var t=ev.target;var pg=t.dataset.pg;if(!pg)return;
+  if(t.classList.contains('cx-inp')&&(t.tagName==='TEXTAREA'||t.type==='text')){
+    setField(pg,t.dataset.k,t.value);
+    return;
+  }
   if(t.classList.contains('hon-pct-inp')){setHonorarios(pg,t.value);}
   else if(t.classList.contains('radicado-inp')){setRadicado(pg,t.value);}
   else if(t.classList.contains('medidas-txt')){setMedidasTxt(pg,t.value);}
@@ -2331,6 +2452,7 @@ function guardarNuevoPagare(){
     notifDemandado:false,notifCodeudores:[],vigiladoLitigio:false,vigiladoPropio:false,
     hojaFisica:false,atencionPrioritaria:false,fechaIngreso:'',pagoHonorariosRealizado:false,
     fechaDevolucionPagares:'',pagaresUnificados:[],actuaciones:[]};
+  CAMPOS_EXTRA.forEach(function(f){np[f.k]='';});
   pagares.unshift(np);savePagaresLocal();syncPagare(np);
   closeModal('modal-nuevo-pagare');renderTabla();toast('Pagaré '+pag+' agregado');
 }
